@@ -1,0 +1,135 @@
+
+/*登录用户样式控制*/
+.user-login {
+  /*background: #f3f3f3;*/
+  float: right;
+  margin-right: 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  .user-area {
+    width: 140px;
+    padding: 16px 10px;
+    display: inline-block;
+    position: relative;
+    &:hover {
+      background-color: #f5f5f5;
+      box-shadow: 0 5px 20px rgba(0,0,0,.3);
+      .drop-menu {
+        display: block;
+      }
+    }
+    .user-avatar {
+      height: 32px;
+      text-align: center;
+      .avatar-img {
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        border-radius: 16px;
+        margin-right: 10px;
+        vertical-align: middle;
+        background: center no-repeat;
+        background-size: cover;
+        background-color: #D8D8D8;
+      }
+      .el-icon-arrow-down {
+        vertical-align: middle;
+        font-size: 12px;
+        color: #C0CCDA;
+      }
+    }
+  }
+  .drop-menu {
+    position: absolute;
+    right: 0;
+    top: 64px;
+    display: none;
+    width: 140px;
+    z-index: 1;
+    background-color: #f5f5f5;
+    box-shadow: 0 5px 20px rgba(0,0,0,.3);
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      padding: 12px 20px;
+      cursor: pointer;
+      line-height: 1;
+      font-size: 14px;
+      &:hover {
+        background-color: #2b3035;
+        color: #ffffff;
+      }
+    }
+    .iconfont {
+      font-size: 20px;
+      margin-right: 10px;
+    }
+  }
+}
+
+// 左侧导航栏样式
+#nav-menu {
+  height: 100%;
+  border-radius: 0;
+  background: #ffffff;
+  .tools-btn {
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    border-bottom: 1px solid #333333;
+  }
+  .el-menu {
+    background-color: #f9f9f9;
+  }
+  .el-menu-item,
+  .el-submenu .el-submenu__title {
+    height: 44px;
+    line-height: 44px;
+    color: #636363;
+    &:hover {
+      width: 100%;
+      background-color: #2b3035;
+      a, .active-temp{
+        color: white;
+      }
+    }
+  }
+  .router-link-active {
+    color: #03a9f4;
+  }
+}
+
+/*修改eleui样式*/
+.el-date-editor.el-input, .el-date-editor.el-input__inner{
+  width: 180px;
+}
+
+.el-submenu .el-menu-item{
+  min-width: 0;
+}
+
+.el-button{
+  padding: 8px 10px;
+}
+
+.el-button--mini, .el-button--small {
+  font-size: 16px;
+  border-radius: 3px;
+}
+/*end*/
+
+/*router链接a标签样式*/
+.btn-icon{
+  color: #ffffff !important;
+}
+
+/*分页*/
+.pageBar{
+  text-align: center;
+  margin-top: 20px;
+}
+

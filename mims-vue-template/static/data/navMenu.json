@@ -1,0 +1,224 @@
+[
+  {
+    "path": "/home",
+    "name": "首页"
+  },
+  {
+    "name": "器具功能",
+    "child": [{
+      "name": "器具台账",
+      "path": "/components"
+    },
+      {
+        "path": "/new",
+        "name": "器具新增"
+      },
+      {
+        "name": "器具维修",
+        "child": [{
+          "path": "/components/function/permission",
+          "name": "待处理"
+        },
+          {
+            "path": "/components/function/pageTable",
+            "name": "已处理"
+          },
+          {
+            "path": "/components/function/query",
+            "name": "查询"
+          }
+        ]
+      },
+        {
+        "name": "器具使用",
+        "child": [{
+          "path": "/components/use/treated",
+          "name": "待处理"
+        },
+        {
+          "path": "/components/use/processed",
+          "name": "已处理"
+        },
+        {
+          "path": "/components/use/query",
+          "name": "查询"
+        }
+
+        ]
+      },
+      {
+        "name": "器具报废",
+        "child": [{
+          "path": "/components/assist/treated",
+          "name": "待处理"
+        },
+          {
+            "path": "/components/assist/processed",
+            "name": "已处理"
+          },
+          {
+            "path": "/components/assist/query",
+            "name": "查询"
+          }]
+      },
+      {
+        "name": "器具备件",
+        "child": [{
+          "path": "/components/part/treated",
+          "name": "待处理"
+        }, {
+          "path": "/components/part/processed",
+          "name": "已处理"
+        },
+          {
+            "path": "/components/part/query",
+            "name": "查询"
+          }]
+      },
+      {
+        "name": "器具停用",
+        "child": [{
+          "path": "/components/stop/treated",
+          "name": "待处理"
+        }, {
+          "path": "/components/stop/processed",
+          "name": "已处理"
+        }, {
+          "path": "/components/stop/query",
+          "name": "查询"
+        }]
+      },
+      {
+        "name": "器具释放",
+        "child": [{
+          "path": "/components/release/treated",
+          "name": "待处理"
+        }, {
+          "path": "/components/release/processed",
+          "name": "已处理"
+        },
+          {
+            "path": "/components/release/query",
+            "name": "查询"
+          }]
+      },
+      {
+        "name": "器具采购",
+        "child": [{
+          "path": "/components/purchase/treated",
+          "name": "待处理"
+        }, {
+          "path": "/components/purchase/processed",
+          "name": "已处理"
+        }, {
+          "path": "/components/purchase/query",
+          "name": "查询"
+        }]
+      }
+    ]
+  },
+  {
+    "name": "周检",
+    "child": [{
+      "name": "周检计划",
+      "child": [
+        {
+          "path": "/components/ui/treated",
+          "name": "待处理"
+        },
+        {
+          "path": "/components/ui/processed",
+          "name": "已处理"
+        },
+        {
+          "path": "/components/ui/query",
+          "name": "查询"
+        }
+      ]
+    },
+      {
+        "name": "周检统计",
+        "child": [
+          {
+            "path": "/components/total/delay",
+            "name": "超期器具"
+          },
+          {
+            "path": "/components/total/rate",
+            "name": "周检率"
+          }
+        ]
+      },
+      {
+        "path": "/example/confirm",
+        "name": "完检确认"
+      },
+      {
+        "path": "/example/success",
+        "name": "周检确认"
+      }
+    ]
+  },
+  {
+    "name": "送检",
+    "child": [{
+      "path": "/inspection/newInspection",
+      "name": "新送检单",
+      "permission": ["edit"]
+    },
+      {
+        "path": "/inspection/treated",
+        "name": "受理中送检单"
+      },
+      {
+        "path": "/inspection/processed",
+        "name": "已完成送检单"
+      },
+      {
+        "path": "/inspection/return",
+        "name": "已退回送检单"
+      },
+      {
+        "path": "/inspection/confirm",
+        "name": "完检确认"
+      },
+      {
+        "path": "/inspection/origin",
+        "name": "溯源机构"
+      },
+      {
+        "path": "/inspection/total",
+        "name": "送检统计"
+      }
+    ]
+  },
+  {
+    "name": "设置",
+    "child": [{
+      "path": "/setUp/number",
+      "name": "委托单位",
+      "permission": ["edit"]
+    },
+      {
+        "path": "/setUp/sample",
+        "name": "备案样品"
+      },
+      {
+        "path": "/setUp/news",
+        "name": "送检信息"
+      },
+      {
+        "path": "/setUp/user",
+        "name": "登录用户"
+      },
+      {
+        "path": "/setUp/company",
+        "name": "单位管理"
+      },
+      {
+        "path": "/setUp/role",
+        "name": "角色权限"
+      }
+    ]
+  }
+]
